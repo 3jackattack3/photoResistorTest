@@ -1,9 +1,16 @@
 #include <Arduino.h>
 
 void setup() {
-    // put your setup code here, to run once:
+    pinMode(A0, INPUT);
+    pinMode(13, OUTPUT);
+    analogWrite(13, 50);
+
+    Serial.begin(115200);
 }
 
 void loop() {
-    // put your main code here, to run repeatedly:
+    analogWrite(13, 150);
+    Serial.println(analogRead(A0));
+    digitalWrite(13, LOW);
+    delay(1000);
 }
