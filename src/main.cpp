@@ -16,7 +16,7 @@ void loop() {
     Serial.println(analogRead(A0));
     digitalWrite(12, 0);
     delay(1000);*/
-    blink.flash();
+    blink.flash(2000, 2000);
 }//heyyyyy
 //HEY JACK
 //YOOOOOO
