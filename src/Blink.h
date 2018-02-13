@@ -18,7 +18,7 @@ Blink::Blink(int pin)
 void Blink::flash()
 {
   digitalWrite(_pin, HIGH);
-  delay(500);
+  delay(1000);
   digitalWrite(_pin, LOW);
   delay(500);
 }
