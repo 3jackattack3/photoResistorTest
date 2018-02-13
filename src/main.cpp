@@ -13,4 +13,6 @@ void loop() {
     Serial.println(analogRead(A0));
     digitalWrite(12, 0);
     delay(1000);
-}
+}//heyyyyy
+//HEY JACK
+//YOOOOOO
