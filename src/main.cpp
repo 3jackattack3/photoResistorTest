@@ -2,15 +2,15 @@
 
 void setup() {
     pinMode(A0, INPUT);
-    pinMode(13, OUTPUT);
-    analogWrite(13, 50);
+    pinMode(12, OUTPUT);
+    analogWrite(12, 50);
 
     Serial.begin(115200);
 }
 
 void loop() {
-    analogWrite(13, 150);
+    analogWrite(12, 255);
     Serial.println(analogRead(A0));
-    digitalWrite(13, LOW);
+    digitalWrite(12, 0);
     delay(1000);
 }
