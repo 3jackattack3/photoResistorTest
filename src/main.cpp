@@ -2,7 +2,7 @@
 #include <Blink.h>
 #include <Morse.h>
 
-// Blink blink(13);
+Blink blink(13);
 Morse morse(13);
 
 void setup() {
