@@ -44,11 +44,9 @@ void Morse::dash()
 
 void Morse::code(String code)
 {
-  for(int i=0; i<code.length(); i++)
+  for(int i=0; i<(unsigned)code.length(); i++)
   {
-    if(code[i] == '.')
-      dot();
-    else if(code[i] == '-')
-      dash();
+    if(code[i] == '.') dot();
+    else if(code[i] == '-') dash();
   }
 }
