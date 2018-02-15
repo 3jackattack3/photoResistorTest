@@ -1,7 +1,9 @@
 #include <Arduino.h>
 #include <Blink.h>
+#include <Morse.h>
 
-Blink blink(13);
+//Blink blink(13);
+Morse morse(13, 500);
 
 void setup() {
     /*pinMode(A0, INPUT);
@@ -16,7 +18,7 @@ void loop() {
     Serial.println(analogRead(A0));
     digitalWrite(12, 0);
     delay(1000);*/
-    // blink.flash(2000, 2000);
+    morse.code("..--..");
 
 }//heyyyyy
 //HEY JACK
