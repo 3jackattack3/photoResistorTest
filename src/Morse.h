@@ -13,10 +13,10 @@ class Morse
     int _pin, _unit;
 };
 
-// Morse::Morse(int pin)
-// {
-//   Morse(pin, 500);
-// }
+Morse::Morse(int pin)
+{
+  Morse(pin, 500);
+}
 
 Morse::Morse(int pin, int unit)
 {
